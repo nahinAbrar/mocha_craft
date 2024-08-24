@@ -18,7 +18,7 @@ const Hero = () => {
 
     <div className="container mx-auto h-full flex flex-col xl:flex-row items-center z-30 relative">
       {/**text*/}
-      <div className="flex-1 flex flex-col text-center justify-center items-center xl:pb-12 gap-10 h-full">
+      <div data-scroll data-scroll-speed="0.4" className="flex-1 flex flex-col text-center justify-center items-center xl:pb-12 gap-10 h-full">
         {/**badges & h1*/}
         <div className="flex flex-col items-center"> {/*lg:flex*/}
           <Badge containerStyles="hidden xl:flex lg:w-[90px] lg:h-[150px] xl:w-[100px] xl:h-[180px]" />

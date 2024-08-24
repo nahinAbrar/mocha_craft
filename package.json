@@ -9,8 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^11.3.30",
     "gsap": "^3.12.5",
-    "locomotive-scroll": "^4.1.4",
+    "locomotive-scroll": "^5.0.0-beta.15",
     "next": "14.2.6",
     "react": "^18",
     "react-dom": "^18",
@@ -19,6 +20,7 @@
     "swiper": "^11.1.10"
   },
   "devDependencies": {
+    "@types/react": "^18.3.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
   }
