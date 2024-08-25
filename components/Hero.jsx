@@ -5,7 +5,7 @@ import Badge from './Badge'
 
 
 const Hero = () => {
-  return <section className="h-[80vh] xl:h-screen relative text-white">
+  return <section className="h-[100vh] xl:h-screen relative text-white">
     {/** overlay*/}
     <div className="bg-hero_overlay absolute w-full h-full z-10 bg-primary/[0.93]">
 
