@@ -1,4 +1,5 @@
 "use client"
+import About from '@/components/About'
 import Explore from '@/components/Explore'
 import Hero from '@/components/Hero'
 import React from 'react'
@@ -19,6 +20,7 @@ const Home = () => {
     <div className="h-full overflow-x-hidden">
       <Hero />
       <Explore />
+      <About />
       {/*Temporary Div*/}
       <div className="h-[4000px]"></div>
     </div>
