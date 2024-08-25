@@ -7,11 +7,11 @@ import Nav from "./Nav/Nav"
 
 const Header = () => {
     const [navActive, setNavActive] = useState(false)
-    return <header className="absolute top-[40px] left-0 right-0 z-[60]">
+    return <header className="absolute top-[48px] left-0 right-0 z-[60]">
         <div className="container mx-auto">
             <div className="flex justify-between items-center">
                 {/*logo */}
-                <Link href="/" className="w-[100px] h-[40px] xl:w-[120px] xl:h-[40px] z-[60]">
+                <Link href="/" className="relative w-[120px] h-[45px] xl:w-[120px] xl:h-[40px] z-[60]">
                     <Image
                         src="/assets/mochaa.svg"
                         fill
