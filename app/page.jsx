@@ -27,8 +27,6 @@ const Home = () => {
       <Menu />
       <OpeningHours />
       <Testimonials />
-      {/*Temporary Div*/}
-      <div className="h-[4000px]"></div>
     </div>
   )
 }
