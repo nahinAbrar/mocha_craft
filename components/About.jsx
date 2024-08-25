@@ -34,7 +34,8 @@ const About = () => {
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
         const animation = gsap.fromTo(
-            scrollableSectionRef.current, { translateX: 0 },
+            scrollableSectionRef.current,
+            { translateX: 0 },
             {
                 translateX: "-200vw", ease: "none", duration: 1, scrollTrigger: {
                     trigger: scrollableTriggerRef.current,
@@ -51,48 +52,50 @@ const About = () => {
     }, [])
 
     return (
-        <section className="overflow-hidden bg-primary">
+        <section className="overflow-hidden bg-primary lg:p-20">
             <div ref={scrollableTriggerRef}>
-
-                <div 
-                ref={scrollableSectionRef} 
-                className="h-screen w-[300vw] flex relative">
+                <div
+                    ref={scrollableSectionRef}
+                    className="h-screen lg:h-[90vh] w-[300vw] flex relative">
                     {data.map((item, index) => {
-                        return <div key={index}
+                        return <div
+                            key={index}
                             className="w-screen h-screen flex flex-col justify-center items-center relative">
                             <div className="container mx-auto">
-                                {/*text*/}
-                                <div className="flex flex-1 flex-col justify-center items-center">
-                                    <Badge containerStyles="w-[180px] h-[180px]" />
-                                    <div className="max-w-[560px] text-center">
-                                        {/*title*/}
-                                        <h2 className="h2 text-white mb-4">
-                                            <span className="mr-4">{item.title.split(" ")[0]}</span>
-                                            <span className="text-accent">{item.title.split(" ")[1]}</span>
-                                        </h2>
-                                        {/*Separator*/}
-                                        <div className="mb-8">
-                                            <Separator />
+                                <div className="flex gap-[30px] relative">
+                                    {/*text*/}
+                                    <div className="flex flex-1 flex-col justify-center items-center">
+                                        <Badge containerStyles="w-[180px] h-[180px]" />
+                                        <div className="max-w-[560px] text-center">
+                                            {/*title*/}
+                                            <h2 className="h2 text-white mb-4 lg:mb-2">
+                                                <span className="mr-4">{item.title.split(" ")[0]}</span>
+                                                <span className="text-accent">{item.title.split(" ")[1]}</span>
+                                            </h2>
+                                            {/*Separator*/}
+                                            <div className="mb-8 lg:mb-5">
+                                                <Separator />
+                                            </div>
+                                            {/*Description*/}
+                                            <p className="leading-relaxed mb-36 lg:mb-10 px-8 xl:px-0">
+                                                {item.description}
+                                            </p>
+                                            {/*btn */}
+                                            <button className="btn">
+                                                See More
+                                            </button>
                                         </div>
-                                        {/*Description*/}
-                                        <p className="leading-relaxed mb-36 px-8 xl:px-0">
-                                            {item.description}
-                                        </p>
-                                        {/*btn */}
-                                        <button className="btn">
-                                            See More
-                                        </button>
                                     </div>
-                                </div>
-                                {/*image*/}
-                                <div className="hidden xl:flex flex-1 w-full h-[70vh] relative">
-                                    <Image src={item.imgSrc}
-                                        fill
-                                        className="object-cover"
-                                        quality={100}
-                                        priority
-                                        alt=""
-                                    />
+                                    {/*image*/}
+                                    <div className="hidden w-full flex-1 relative lg:flex xl:h-[70vh]">
+                                        <Image src={item.imgSrc}
+                                            fill
+                                            className="object-contain"
+                                            quality={100}
+                                            priority
+                                            alt=""
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
