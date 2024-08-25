@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="flex flex-col items-center"> {/*lg:flex*/}
           <Badge containerStyles="hidden xl:flex lg:w-[90px] lg:h-[150px] xl:w-[100px] xl:h-[180px]" />
           <h1 className="h1 text-white">
-            <span className="text-accent">Coffe</span> & Joy
+            <span className="text-accent">Coffee</span> & Joy
           </h1>
         </div>
 

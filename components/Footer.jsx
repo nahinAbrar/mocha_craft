@@ -68,7 +68,7 @@ const Footer = () => {
                     {/*Copyright*/}
 
                     <div className='border-t border-white/10 text-[15px] text-white/70 font-light w-full flex items-center justify-center py-6 font-primary'>
-                        <p>&copy; Copyright 2024 - MochaCraft. All Rights Reserved</p>
+                        <p>&copy; Copyright 2024 - MochaCraft || All Rights Reserved</p>
                     </div>
                 </div>
             </div>
