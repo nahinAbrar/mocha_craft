@@ -4,18 +4,18 @@ import React from 'react'
 import { FaYoutube, FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa"
 
 const links = [
-    { href: "/", name: "Home" },
-    { href: "/", name: "Explore" },
-    { href: "/", name: "About" },
-    { href: "/", name: "Menu" },
-    { href: "/", name: "Contact" },
+    { href: "#home", name: "Home" },
+    { href: "#explore", name: "Explore" },
+    { href: "#about", name: "About" },
+    { href: "#menu", name: "Menu" },
+    { href: "#contact", name: "Contact" },
 ]
 
 
 
 const Footer = () => {
     return (
-        <footer className='bg-footer bg-cover bg-no-repeat pt-16 relative'>
+        <footer className='bg-footer bg-cover bg-no-repeat pt-16 relative' id='contact'>
             {/*overlay*/}
             <div className='absolute w-full h-full bg-black/[0.90] z-10 top-0'></div>
 
@@ -36,7 +36,7 @@ const Footer = () => {
 
                     </Link>
                     {/*nav*/}
-                    <nav className='flex flex-col xl:flex-row gap-8 xl:gap-12 justify-center items-center'>
+                    <nav className='hidden md:flex flex-col md:flex-row gap-8 xl:gap-12 justify-center items-center'>
                         {links.map((link, index) => {
                             return <Link href={link.href} key={index} className='uppercase text-white tracking-widest hover:text-accent transition-all font-secondary'>
                                 {link.name}
@@ -44,7 +44,7 @@ const Footer = () => {
                         })}
                     </nav>
                     {/**social */}
-                    <ul className='flex text-white text-xl'>
+                    <ul className='flex text-white text-xl gap-5'>
                         <Link href="/" className='w-[54px] h-[54px] border border-white/[0.15] rounded-full flex items-center justify-center hover:text-accent transition-all'>
                             <FaYoutube />
 
@@ -67,7 +67,7 @@ const Footer = () => {
                     </ul>
                     {/*Copyright*/}
 
-                    <div className='border-t border-white/10 text-[15px] text-white/70 font-light w-full flex items-center justify-center py-6'>
+                    <div className='border-t border-white/10 text-[15px] text-white/70 font-light w-full flex items-center justify-center py-6 font-primary'>
                         <p>&copy; Copyright 2024 - MochaCraft. All Rights Reserved</p>
                     </div>
                 </div>

@@ -2,10 +2,11 @@
 import React from 'react'
 import Separator from './Separator'
 import Badge from './Badge'
+import Link from 'next/link'
 
 
 const Hero = () => {
-  return <section className="h-[100vh] xl:h-screen relative text-white">
+  return <section className="h-[100vh] xl:h-screen relative text-white" id='home'>
     {/** overlay*/}
     <div className="bg-hero_overlay absolute w-full h-full z-10 bg-primary/[0.93]">
 
@@ -32,9 +33,12 @@ const Hero = () => {
         <p className="lead font-light max-w-[300px] md:max-w-[430px] xl:max-w-[560px] mb-4">
           Experience the joy of exceptional coffee in our cozy space, where every cup is crafted with passion and warmth
         </p>
-        <button className="btn">
-          Our Menu
-        </button>
+        <Link
+          href={"#menu"}>
+          <button className="btn">
+            Our Menu
+          </button>
+        </Link>
       </div>
     </div>
   </section>

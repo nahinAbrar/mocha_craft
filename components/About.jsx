@@ -52,7 +52,7 @@ const About = () => {
     }, [])
 
     return (
-        <section className="overflow-hidden bg-primary lg:p-20">
+        <section className="overflow-hidden bg-primary lg:p-20" id="about">
             <div ref={scrollableTriggerRef}>
                 <div
                     ref={scrollableSectionRef}

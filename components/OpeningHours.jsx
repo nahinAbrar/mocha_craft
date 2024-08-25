@@ -4,9 +4,9 @@ import Badge from "./Badge"
 
 const OpeningHours = () => {
     return (
-        <section className="flex bg-primary h-[60vh] xl:h-[80vh]">
+        <section className="flex bg-primary h-[60vh] lg:h-[70vh] xl:h-[80vh]">
             {/*1*/}
-            <div className="hidden relative xl:flex flex-1 justify-center items-center">
+            <div className="hidden relative lg:flex flex-1 justify-center items-center">
                 {/*overlay*/}
                 <div className="w-full h-full absolute z-40 top-0 bg-black/60"></div>
                 <Image
